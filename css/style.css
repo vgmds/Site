@@ -1,0 +1,572 @@
+@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.0/font/bootstrap-icons.css");
+@font-face {
+  font-family: Montserrat-regular;
+  src: url("../font/montserrat/Montserrat-Regular.ttf");
+}
+@font-face {
+  font-family: Montserrat-semibold;
+  src: url("../font/montserrat/Montserrat-SemiBold.ttf");
+}
+@font-face {
+  font-family: Montserrat-italic;
+  src: url("../font/montserrat/Montserrat-Italic.ttf");
+}
+@font-face{
+    font-family: AdihausDIN;
+    src: url("../font/729-font.ttf");
+}
+
+
+body{
+    font-family: "Montserrat", sans-serif;
+    font-weight: 300;
+}
+h1{
+	color:red;
+}
+
+hr{
+    width: 100%;
+    height: 2px;
+    background-color: 909090;
+    margin-right: auto;
+    margin-left: auto;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    border-width: 1px;
+    border-color: 909090   
+}
+
+.header{
+    padding: 15px 0;
+}
+.header .row > div{
+	padding: 0;
+}
+.header i{
+	font-size: 2rem;
+	color: black;
+	margin: 0 4px;
+}
+.header .bag{
+	text-align: end;
+}
+.header .menu .bi{
+    font-size: 2rem;
+}
+
+.header .logo-section{
+	text-align: center;	
+}
+.header .logo-section img{
+	width: 270px;
+}
+.header .search{
+	text-align: left;
+    margin: 0 20px;
+}
+.header .container-fluid .row:last-child{
+        margin-top: 10px
+}
+.header	input{
+    width: 100%;
+    height: 35px;
+    padding: 0 15px;
+    color: #999999;
+    background: transparent;
+    border: 1px solid black;
+    border-radius: 4px;
+}
+.header button{
+    position: absolute;
+    width: 20px;
+    height: 30px;
+    top: 2.5px;
+    right: 40px;
+    text-align: center;
+    background: transparent;
+    color: #353535;
+    border: none;
+}
+.header button i.bi.bi-search{
+    font-size: 16px;
+    margin: 0;
+    height: 30px;
+    width: 20px;
+}
+.container-infos{
+    background: #eeeeee; 
+    border: 1px #909090 solid;
+}
+
+.infos{
+    text-align: center; 
+}
+.infos .bi::before{
+    text-align: center;
+    align-content: flex-start;
+}
+.infos i{
+	font-size: 4rem;
+	color: #383b8a;
+}
+.infos h1{
+    font-size: 18px;
+    color: #353535; 
+    font-weight: 600;
+}
+
+.carousel .carousel-item > div {
+    height: 300px;"
+}
+.carousel .bi{
+    font-size: 25px;
+    color: #383b8a;
+}
+
+
+/********************************/
+.dropdown{
+    width: 60px;
+}
+.dropdown-content {
+    width: 300px;
+    display: none;
+    position: absolute;
+    top: -15px;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+.dropdown-content a {
+    padding: 0 10px;
+    width: 100%;
+    display: block;
+    text-align: left;
+    background: #f7f7f7;
+    border-bottom: 1px solid #D2D2D2;
+    font-size: 16px;
+    font-family: 'Montserrat', sans-serif;
+    line-height: 60px;
+    text-transform: none;
+    position: relative;
+    color: #111;
+    text-decoration: none;
+}
+.dropdown-content a .bi {
+    color: blue;
+
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+
+
+
+
+/**********************************/
+/************ FEATURE *************/
+/**********************************/
+
+.feature .section-header h1{
+    background-color: #fff;
+    padding: 10px 0;
+    font-size: 50px;
+    font-family: Montserrat-semibold;
+}
+
+
+
+/**********************************/
+/*********** Brand CSS ************/
+/**********************************/
+.brand {
+    position: relative;
+    margin-bottom: 30px;
+    padding: 30px 0;
+    background: #ffffff;
+}
+
+.brand .brand-item {
+    text-align: center; 
+}
+
+.brand .brand-item img {
+    max-width: 100%;
+    margin: auto; 
+}
+
+.brand .slick-prev,
+.brand .slick-next {
+    width: 40px;
+    height: 40px;
+    z-index: 1;
+    opacity: 0;
+    transition: .5s;
+    background: #FF6F61;
+    border-radius: 4px;
+}
+
+.brand .slick-prev {
+    left: 55px;
+}
+
+.brand .slick-next {
+    right: 55px;
+}
+
+.brand .slick-slider:hover .slick-prev {
+    left: 15px;
+    opacity: 1;
+}
+
+.brand .slick-slider:hover .slick-next {
+    right: 15px;
+    opacity: 1;
+}
+
+.brand .slick-prev:hover,
+.brand .slick-prev:focus,
+.brand .slick-next:hover,
+.brand .slick-next:focus {
+    background: #000000;
+}
+
+.brand .slick-prev:hover::before,
+.brand .slick-prev:focus::before,
+.brand .slick-next:hover::before,
+.brand .slick-next:focus::before {
+    color: #FF6F61;
+}
+
+.brand .slick-prev::before,
+.brand .slick-next::before {
+    font-family: "Font Awesome 5 Free";
+    font-weight: 900;
+    font-size: 30px;
+    color: #000000;
+}
+
+.brand .slick-prev::before {
+    content: "\f104";
+}
+
+.brand .slick-next::before {
+    content: "\f105";
+}
+/**********************************/
+/*********** Brand CSS ************/
+/**********************************/
+
+/**********************************/
+/******** Product Item CSS ********/
+/**********************************/
+.product-item {
+    position: relative;
+    margin: 0 px;
+    display: inline-block;
+}
+
+.product-item:hover{
+    border: 1px black solid;
+}
+
+.product-item .product-title {
+    padding: 5px 2px;
+    text-align: left;
+    background: #f2f2f2;
+    transition: all .3s;
+}
+
+.product-item:hover .product-title {
+    background: #eee;
+}
+
+.product-item .product-title a,
+.product-item .product-title .ratting {
+    position: relative;
+    width: 100%;
+}
+
+.product-item .product-title a {
+    margin: 25px 5px;
+    color: #222;
+    font-size: 15px;
+}
+
+.product-item .product-content .price span {
+    margin-left: 12px;
+    text-decoration: line-through;
+    font-weight: 700;
+    color: red;
+}
+
+/*.product-item:hover .product-title a,
+.product-item:hover .product-title .ratting i {
+    color: #ffffff;
+}*/
+
+/*.product-item:hover .product-content .price span {
+    color: #dddddd;
+}*/
+
+.product-item .product-image {
+    position: relative;
+    overflow: hidden;
+}
+
+.product-item .product-image a {
+    display: block;
+    background: #eee;
+    transition: .3s;
+}
+
+.product-item .product-image img {
+    width: 100%; 
+    transition: all .3s;
+}
+
+.product-item:hover .product-image img {
+    transform: scale(1.2);
+}
+
+.product-item .product-price {
+    padding: 20px;
+    background: #f2f2f2;
+    transition: all .3s;
+}
+
+.product-item:hover .product-price {
+    background: #eee;
+}
+
+.product-item .product-price h3 {
+    font-size:20px; 
+    display: inline-block;
+    color: #222;
+    margin: 0;
+}
+
+.product-item .product-price h3 span {
+    font-size: 13px;
+}
+
+.product-item .product-price .btn {
+    float: right;
+    border: none;
+    color: #000000;
+    background: #FF6F61;
+}
+
+.product-item:hover .product-price .btn,
+.product-item .product-price .btn:hover {
+    color: #FF6F61;
+    background: #ffffff;
+}
+
+.product-item .product-price .btn i {
+    margin-right: 5px;
+}
+
+
+/*********************************************************************************************************/
+/***************************************************SM****************************************************/
+/*********************************************************************************************************/
+@media (min-width: 576px) { 
+	h1{
+	color:blue;
+}
+.header .logo{
+	width: 360px;
+	
+}
+
+}
+
+/*********************************************************************************************************/
+/***************************************************MD****************************************************/
+/*********************************************************************************************************/
+@media (min-width: 768px) { 
+	h1{
+	color:green;
+}
+  
+ }
+/*********************************************************************************************************/
+/***************************************************LG****************************************************/
+/*********************************************************************************************************/
+@media (min-width: 992px) { 
+	h1{
+	color:yellow;
+}
+.container-fluid {
+        padding-right: 60px;
+        padding-left: 60px;
+    }
+/***************************/
+/********TOP HEADER*********/
+/***************************/
+.top-header{
+    margin: 0 -30px;
+    background-color: #fff;    
+}
+.top-header .row > div{
+    margin: 6px 0;
+    font-size: 12px;
+}
+.top-header .row div:last-child{
+    text-align: right;
+}
+
+.top-header .bi{
+    color: #222;
+}
+.top-header .row a{
+    font-family: "Montserrat"
+    text-decoration: none;
+
+    color: #222;
+}
+.top-header .row a:hover{
+    color: #383b8a;
+    text-decoration: none;
+}
+
+
+/**************************/
+/******BOTTOM HEADER*******/
+/**************************/
+.bottom-bar {
+    padding: 0 0;
+    background: #ffffff;
+    margin-bottom: 5px;
+}
+
+.bottom-bar .logo {
+    text-align: left;
+    overflow: visible;
+    margin: 0 -30px;
+}
+
+.bottom-bar .logo a img {
+    height: 60px;
+    padding-top: 10px;
+}
+
+.bottom-bar .search {
+    min-width: : 10%;
+    padding: 0 40px;
+}
+
+.bottom-bar .search input[type=text] {
+    width: 100%;
+    height: 40px;
+    padding: 0 15px;
+    color: #666666;
+    border: 1px solid #383b8a;
+    border-radius: 4px;
+}
+
+.bottom-bar .search button {
+    position: absolute;
+    width: 40px;
+    height: 38px;
+    top: 1px;
+    right: 56px;
+    padding: 0 13px;
+    border: none;
+    background: none;
+    color: black;
+    border-radius: 0 2px 2px 0;
+}
+
+.bottom-bar .search button:hover {
+    background: #383b8a;
+    color: #ffffff;
+}
+
+.bottom-bar .user {
+    font-size: 0;
+    text-align: right;
+}
+
+.bottom-bar .user .wishlist {
+    margin-right: 15px;
+}
+
+.bottom-bar .user .cart i,
+.bottom-bar .user .wishlist i {
+    color: #ff3137;
+}
+
+.bottom-bar .user .cart span,
+.bottom-bar .user .wishlist span {
+    color: #383b8a;
+    font-size: 15px;
+}
+
+.bottom-bar .user .cart:hover i,
+.bottom-bar .user .wishlist:hover i,
+.bottom-bar .user .cart:hover span,
+.bottom-bar .user .wishlist:hover span {
+    color: #ffffff;
+}
+
+.btn {
+    color: #FF6F61;
+    background: #ffffff;
+    border: 1px solid #383b8a;
+}
+
+.btn:hover,
+.btn:active,
+.btn:focus {
+    color: #ffffff;
+    background: #383b8a;
+    box-shadow: none;
+}
+
+/***************************/
+/**********NAVBAR***********/
+/***************************/
+.navbar{
+    padding-top: 0;
+    margin: 0 15px;
+}
+.navbar .container-fluid{
+    display: block;
+}
+.navbar .row > div{
+    text-align: center;
+}
+.navbar ul{
+    height: 20px;
+}
+.navbar li{
+    display: inline-block;
+    font-size: 14px;
+    margin: 10px 15px;
+    letter-spacing: 1.87px;
+    font-stretch: 100%;
+}
+
+/**************************/
+/**********SLIDE***********/
+/**************************/
+.carousel .carousel-item > div{
+    height: 500px;
+}
+
+
+}
+
+/*********************************************************************************************************/
+/***************************************************XL****************************************************/
+/*********************************************************************************************************/
+@media (min-width: 1200px) { 
+    h1{
+    color:black;
+}
