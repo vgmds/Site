@@ -60,7 +60,7 @@ hr{
 	text-align: center;	
 }
 .header .logo-section img{
-	width: 270px;
+	width: 250px;
 }
 .header .search{
 	text-align: left;
@@ -329,6 +329,9 @@ hr{
 @media (min-width: 576px) { 
 	h1{
 	color:blue;
+}
+.header .logo-section img{
+    width: 270px;
 }
 .header .logo{
 	width: 360px;
