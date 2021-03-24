@@ -101,8 +101,7 @@ hr{
     width: 20px;
 }
 .container-infos{
-    background: #eeeeee; 
-    border: 1px #909090 solid;
+    background: #fff;
 }
 
 .infos{
@@ -114,7 +113,7 @@ hr{
 }
 .infos i{
 	font-size: 4rem;
-	color: #383b8a;
+	color: #282828;
 }
 .infos h1{
     font-size: 18px;
@@ -170,7 +169,7 @@ hr{
 /************ FEATURE *************/
 /**********************************/
 .section-header h1{
-    background-color: #ff3137;
+    background-color: #282828;
     color: #fff;
     font-size: 2.5rem;
     font-family: Montserrat-bold;
@@ -299,19 +298,16 @@ hr{
 
 .visita .title-map{
     padding: 15px 0;
-    background-color: #ff3137;
+    background-color: #282828;
     color: #fff;
     text-align: center;
     font-family: Montserrat-semibold;
     margin-bottom: 15px; 
 }
-.visita h1{
-    color: #fff;    
-}
-.visite .map{
-    margin-bottom: 30px;
-}
 
+.visita h1{
+    color: #ff3137;    
+}
 .btn-visita {
     color: #ff3137;
     background: #ffffff;
@@ -326,26 +322,94 @@ hr{
     background: #383b8a;
     box-shadow: none;
 }
+.visite .map{
+    margin-bottom: 30px;
+}
 
+.espace{
+    padding-top: 15px;
+    height: 2px;
+    color: white;
+}
 .footer-line{
     width: 100%;
     height: 2px;
-    background-color: black;
+    background-color: white;
     margin-right: auto;
     margin-left: auto;
     margin-top: 0px;
     margin-bottom: 0px;
-    border-width: 2px;
-    border-color: black; 
+    border-width: 2px; 
 }
 .footer{
     padding: 15px 0;
+    background-color: #272727;
 }
 .footer h1{
-    font-size: 20px;
+    color: #fff;
+    font-size: 15px;
     font-family: Montserrat-semibold;
 }
-
+.footer .contact i{
+    display: inline;
+    color: #fff;
+    margin: 0 10px;
+}
+.footer ul{
+    padding-inline-start: 0px;
+}
+.footer h2{
+    color: #fff;
+    font-size: 14px;
+    font-family: Montserrat-regular;
+    display: inline;
+}
+.footer li{
+    list-style:none;
+}
+.footer .social li{
+    display: inline;
+    margin: 0 10px;
+}
+.footer .social li .bi{
+    font-size: 2rem;
+    color: white;
+}
+.footer .cards{
+    text-align: center;
+}
+.footer .about a{
+    color: white;
+    text-decoration: none;
+}
+.footer .about .bi{
+    font-size: 0.9rem;
+}
+.footer .cards img{
+    display: inline;
+}
+.footer .cards h1{
+    display: inline;
+}
+.footer .dev h1{
+    display: inline;
+}
+.footer .dev img{
+    display: inline;
+}
+.footer .copy {
+    text-align: right;
+    
+}
+.footer .copy h1{
+    margin: 20px 0 0 0;  
+}
+.footer .copy > div{
+    padding: 0; 
+}
+.footer .cards, .footer .dev{
+    text-align: left;
+}
 }
 
 
