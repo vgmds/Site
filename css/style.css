@@ -11,6 +11,11 @@
   font-family: Montserrat-italic;
   src: url("../font/montserrat/Montserrat-Italic.ttf");
 }
+@font-face {
+  font-family: Montserrat-bold;
+  src: url("../font/montserrat/Montserrat-Bold.ttf");
+}
+
 @font-face{
     font-family: AdihausDIN;
     src: url("../font/729-font.ttf");
@@ -164,16 +169,13 @@ hr{
 /**********************************/
 /************ FEATURE *************/
 /**********************************/
-.feature{
-    background-color: #ff3137;
-    padding: 0 25px;
-}
-.feature .section-header h1{
+.section-header h1{
     background-color: #ff3137;
     color: #fff;
-    padding: 10px 0;
-    font-size: 50px;
-    font-family: Montserrat-semibold;
+    font-size: 2.5rem;
+    font-family: Montserrat-bold;
+    padding: 10px 45px;
+    margin: 20px 0px;
 }
 
 /**********************************/
@@ -292,7 +294,7 @@ hr{
 }
 
 .paginations .pagination{
-    padding-top: 20px; 
+    margin: 20px 0; 
 }
 
 .visita .title-map{
@@ -301,10 +303,15 @@ hr{
     color: #fff;
     text-align: center;
     font-family: Montserrat-semibold;
+    margin-bottom: 15px; 
 }
 .visita h1{
-    color: #fff;      
+    color: #fff;    
 }
+.visite .map{
+    margin-bottom: 30px;
+}
+
 .btn-visita {
     color: #ff3137;
     background: #ffffff;
@@ -318,6 +325,25 @@ hr{
     color: #ffffff;
     background: #383b8a;
     box-shadow: none;
+}
+
+.footer-line{
+    width: 100%;
+    height: 2px;
+    background-color: black;
+    margin-right: auto;
+    margin-left: auto;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    border-width: 2px;
+    border-color: black; 
+}
+.footer{
+    padding: 15px 0;
+}
+.footer h1{
+    font-size: 20px;
+    font-family: Montserrat-semibold;
 }
 
 }
@@ -356,15 +382,16 @@ hr{
 	h1{
 	color:yellow;
 }
-.container-fluid {
-        padding-right: 60px;
-        padding-left: 60px;
-    }
+.container-fluid{
+    padding-right: 30px;
+    padding-left:  30px;
+}
+
 /***************************/
 /********TOP HEADER*********/
 /***************************/
 .top-header{
-    margin: 0 -30px;
+    margin: 0 30px;
     background-color: #fff;    
 }
 .top-header .row > div{
@@ -402,7 +429,7 @@ hr{
 .bottom-bar .logo {
     text-align: left;
     overflow: visible;
-    margin: 0 -30px;
+    margin: 0 0px;
 }
 
 .bottom-bar .logo a img {
