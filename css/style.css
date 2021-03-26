@@ -25,9 +25,10 @@
 body{
     font-family: "Montserrat", sans-serif;
     font-weight: 300;
+    background-color: #f7f7f7;
 }
 h1{
-	color:red;
+    color:red;
 }
 
 hr{
@@ -39,22 +40,22 @@ hr{
     margin-top: 0px;
     margin-bottom: 0px;
     border-width: 1px;
-    border-color: 909090   
+    border-color: black;   
 }
 
 .header{
     padding: 15px 0;
 }
 .header .row > div{
-	padding: 0;
+    padding: 0;
 }
 .header i{
-	font-size: 2rem;
-	color: black;
-	margin: 0 4px;
+    font-size: 2rem;
+    color: black;
+    margin: 0 4px;
 }
 .header .bag{
-	text-align: end;
+    text-align: end;
     margin: 0 5px;
 }
 .header .menu .bi{
@@ -62,19 +63,19 @@ hr{
 }
 
 .header .logo-section{
-	text-align: center;	
+    text-align: center; 
 }
 .header .logo-section img{
-	width: 250px;
+    width: 250px;
 }
 .header .search{
-	text-align: left;
+    text-align: left;
     margin: 0 20px;
 }
 .header .container-fluid .row:last-child{
-        margin-top: 10px
+    margin-top: 10px
 }
-.header	input{
+.header input{
     width: 100%;
     height: 35px;
     padding: 0 15px;
@@ -102,6 +103,8 @@ hr{
 }
 .container-infos{
     background: #fff;
+    margin-top: 20px;
+    background-color: transparent;
 }
 
 .infos{
@@ -112,13 +115,23 @@ hr{
     align-content: flex-start;
 }
 .infos i{
-	font-size: 4rem;
-	color: #282828;
+    font-size: 4rem;
+    color: #d43336;
 }
 .infos h1{
     font-size: 18px;
-    color: #353535; 
+    color: #d43336; 
     font-weight: 600;
+}
+.infos .row > div{
+   padding: 10px 15px;
+}
+.infos .inf{
+    width: 100%;
+    padding: 15px 0;
+    border-radius: 5px;
+    border: 1px #d43336 solid;
+    background-color: white;
 }
 
 .carousel .carousel-item > div {
@@ -168,13 +181,28 @@ hr{
 /**********************************/
 /************ FEATURE *************/
 /**********************************/
+.section-header{
+    padding: 40px 45px;
+    margin: 40px 0px;
+}
 .section-header h1{
-    background-color: #282828;
-    color: #fff;
+    background-color: transparent;
+    color: #d43336;
+    text-align: center;
     font-size: 2.5rem;
     font-family: Montserrat-bold;
-    padding: 10px 45px;
-    margin: 20px 0px;
+}
+.hr-feature{
+    width: 5%;
+    height: 2px;
+    background-color: transparent;
+    margin-right: auto;
+    margin-left: auto;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    border-width: 1px;
+    border-color: #d43336; 
+
 }
 
 /**********************************/
@@ -182,41 +210,45 @@ hr{
 /**********************************/
 .product-item {
     position: relative;
-    margin: 0 px;
     display: inline-block;
 }
 
-.product-item:hover{
-    border: 1px black solid;
+.product-item{
+    border: 1px #ccc solid;
+    border-radius: 5px;
+    z-index: 999;
 }
 
 .product-item .product-title {
-    padding: 5px 10px;
     text-align: left;
-    background: #f2f2f2;
+    background: #fff;
     transition: all .3s;
 }
 
 .product-item:hover .product-title {
-    background: #eee;
+    background: #fff;
 }
 
 .product-item .product-title a,
 .product-item .product-title .ratting {
     position: relative;
     width: 100%;
+
 }
 
 .product-item .product-title a {
     color: #222;
     font-size: 15px;
+    font-family: Montserrat-semibold;
+    font-weight: 900px;
+
 }
 
-.product-item .product-content .price span {
+.product-item .product-title h3{
     margin-left: 12px;
-    text-decoration: line-through;
+    text-decoration: none;
     font-weight: 700;
-    color: red;
+    color: #d43336;
 }
 
 .product-item .bi{
@@ -226,7 +258,7 @@ hr{
     z-index: 1000;
     display: flex;
     height: 0px;
-    font-size: 20px;
+    font-size: 20px; 
 }
 .product-item .bi:hover{
     color: red;
@@ -235,11 +267,13 @@ hr{
 .product-item .product-image {
     position: relative;
     overflow: hidden;
+    min-width: 180px;
 }
 
 .product-item .product-image a {
     display: block;
-    background: #eee;
+    background: #f7f7f7;
+    border-radius: 19px 19px 0px 0px;
     transition: .3s;
 }
 
@@ -248,25 +282,28 @@ hr{
     transition: all .3s;
 }
 
-.product-item:hover .product-image img {
-    transform: scale(1.2);
+.product-item:hover .product-image a{
+    background-color: #ccc;
+}
+.product-item:hover .product-image img{
+    opacity: 0.5; 
 }
 
 .product-item .product-price {
     padding: 20px;
-    background: #f2f2f2;
+    background: #fff;
+    border-radius: 19px;
     transition: all .3s;
 }
 
-.product-item:hover .product-price {
-    background: #eee;
-}
 
 .product-item .product-title h3 {
     font-size:15px; 
     display: block;
-    color: #222;
+    font-family: Montserrat-semibold;
+    color: #d43336;
     margin: 0;
+
 }
 
 .product-item .product-title h3 span {
@@ -280,20 +317,18 @@ hr{
     border: none;
     color: #000000;
     background: #FF6F61;
+
 }
 
-
-.product-item .product-price .btn:hover {
-    color: #222;
-    background: #ccc;
-}
 
 .product-item .product-price .btn i {
     margin-right: 15px;
+
 }
 
 .paginations .pagination{
     margin: 20px 0; 
+
 }
 
 .visita .title-map{
@@ -341,22 +376,221 @@ hr{
     margin-bottom: 0px;
     border-width: 2px; 
 }
+.footer-m{
+    background-color: #272727;
+}
+.footer-m .about-m h1, .footer-m .contact-m h1{
+    color: #fff;
+    font-size: 15px;
+    font-family: Montserrat-semibold;
+    margin: 0;
+    padding: 0 15px;
+    display: inline-block;
+}
+.footer-m div:hover ul{
+    display: block;
+}
+.footer-m li, .footer-m a,
+.footer-m .cards h1{
+    color: #fff;
+    list-style:none;
+    font-size: 15px;
+    padding: 1px 0;
+}
+.footer-m ul{
+    padding-inline-start: 10px;
+    margin-block-end: 0em;
+    display: none;
+}
+.footer-m div{
+    padding: 15px 10px;
+    margin: 0;
+    border:1px #444 solid;    
+}
+.footer-m .contact-m i, .footer-m .about-m i{
+    position: absolute;
+    right: 35px;
+    display: inline-block;
+    color: #fff;
+}
+.footer-m .social-m, .footer-m .cards{
+    text-align: center;
+}
+.footer-m .social-m li{
+    display: inline-block;
+    margin: 0 5px;
+}
+.footer-m .social-m ul{
+    display: block;
+}
+.footer-m .social-m h1{
+    color: #fff;
+    font-size: 19px;
+}
+.footer-m .social-m i{
+    font-size: 19px;
+}
+}
+
+
+/*********************************************************************************************************/
+/***************************************************SM****************************************************/
+/*********************************************************************************************************/
+@media (min-width: 576px) { 
+    h1{
+    color:blue;
+}
+.header .logo-section img{
+    width: 270px;
+}
+.header .logo{
+    width: 360px;
+    
+}
+
+}
+
+/*********************************************************************************************************/
+/***************************************************MD****************************************************/
+/*********************************************************************************************************/
+@media (min-width: 768px) { 
+    h1{
+    color:green;
+}
+  
+ }
+/*********************************************************************************************************/
+/***************************************************LG****************************************************/
+/*********************************************************************************************************/
+@media (min-width: 992px) { 
+    h1{
+    color:yellow;
+}
+.container-fluid{
+    padding-left: 30px;
+    padding-right: 30px;
+}
+
+/***************************/
+/********TOP HEADER*********/
+/***************************/
+.fixed{
+    position: fixed;
+    top: 1px;
+    z-index: 99999;
+    background-color: #fff;
+}
+header{
+    position: relative;
+    display: flex;
+    align-items: center;
+
+}
+.header-left{
+    flex-grow: 0;
+    flex-shrink: 0;
+    flex-basis: calc((100% + 20px) / 4);
+    max-width: calc((100% + 20px) / 4);
+    margin: 0;
+    height: 100%;
+}
+.active{
+    color:  #d43336;
+}
+.logo{
+    display: block;
+    flex-shrink: 0;
+    min-height: 25px;
+}
+.logo img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+    vertical-align: middle;
+    border-style: none;
+}
+header .header-center{
+        flex-grow: 0;
+    flex-shrink: 0;
+    flex-basis: calc((100% + 20px) / 2 - 20px);
+    margin: 0;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.header-center li{
+    display: inline-block;
+    padding: 0 10px;
+    text-transform: capitalize;
+    font-family: Montserrat-semibold;
+    color: #555;
+}
+.header-center li:hover{
+    color:  #f03a3d;    
+    transition: all 0.5s;
+}
+.header-center ul{
+    margin: 10px 0;
+    padding-inline-start: 0px;
+}
+
+.header-right {
+    margin-left: auto;
+    align-self: stretch;    
+}
+.header-left, .header-center, .header-right {
+    display: inline-block;
+    align-items: center;
+}
+.header-right div{
+    display: inline-block;
+}
+.header-right .search{
+    margin: 10px 0;
+}
+.header-right .search input{
+    margin: 0 10px;
+}
+.header-right .search input:hover{
+    background-color: red;
+    transition: all 0.4s;
+}
+
+.header-right .search button{
+    position: absolute;
+    right: 63px;
+    top: 13px;
+    border: none;
+    background-color: transparent;
+}
+
+
+/**************************/
+/**********SLIDE***********/
+/**************************/
+.carousel{
+    margin-top:50px; 
+}
+.carousel .carousel-item > div{
+    height: 500px;
+}
 .footer{
-    padding: 15px 0;
+    padding: 10px 0;
     background-color: #272727;
 }
 .footer h1{
     color: #fff;
-    font-size: 15px;
+    font-size: 16px;
     font-family: Montserrat-semibold;
 }
 .footer .contact i{
     display: inline;
     color: #fff;
-    margin: 0 10px;
+    margin: 0 5px;
 }
 .footer ul{
     padding-inline-start: 0px;
+    display: block;
 }
 .footer h2{
     color: #fff;
@@ -369,7 +603,7 @@ hr{
 }
 .footer .social li{
     display: inline;
-    margin: 0 10px;
+    margin: 0 5px;
 }
 .footer .social li .bi{
     font-size: 2rem;
@@ -384,12 +618,13 @@ hr{
 }
 .footer .about .bi{
     font-size: 0.9rem;
+    margin: 0 5px;
 }
 .footer .cards img{
     display: inline;
 }
 .footer .cards h1{
-    display: inline;
+    display: inline
 }
 .footer .dev h1{
     display: inline;
@@ -409,200 +644,6 @@ hr{
 }
 .footer .cards, .footer .dev{
     text-align: left;
-}
-}
-
-
-/*********************************************************************************************************/
-/***************************************************SM****************************************************/
-/*********************************************************************************************************/
-@media (min-width: 576px) { 
-	h1{
-	color:blue;
-}
-.header .logo-section img{
-    width: 270px;
-}
-.header .logo{
-	width: 360px;
-	
-}
-
-}
-
-/*********************************************************************************************************/
-/***************************************************MD****************************************************/
-/*********************************************************************************************************/
-@media (min-width: 768px) { 
-	h1{
-	color:green;
-}
-  
- }
-/*********************************************************************************************************/
-/***************************************************LG****************************************************/
-/*********************************************************************************************************/
-@media (min-width: 992px) { 
-	h1{
-	color:yellow;
-}
-.container-fluid{
-    padding-right: 30px;
-    padding-left:  30px;
-}
-
-/***************************/
-/********TOP HEADER*********/
-/***************************/
-.top-header{
-    margin: 0 30px;
-    background-color: #fff;    
-}
-.top-header .row > div{
-    margin: 6px 0;
-    font-size: 12px;
-}
-.top-header .row div:last-child{
-    text-align: right;
-}
-
-.top-header .bi{
-    color: #222;
-}
-.top-header .row a{
-    font-family: "Montserrat"
-    text-decoration: none;
-
-    color: #222;
-}
-.top-header .row a:hover{
-    color: #383b8a;
-    text-decoration: none;
-}
-
-
-/**************************/
-/******BOTTOM HEADER*******/
-/**************************/
-.bottom-bar {
-    padding: 0 0;
-    background: #ffffff;
-    margin-bottom: 5px;
-}
-
-.bottom-bar .logo {
-    text-align: left;
-    overflow: visible;
-    margin: 0 0px;
-}
-
-.bottom-bar .logo a img {
-    height: 60px;
-    padding-top: 10px;
-}
-
-.bottom-bar .search {
-    min-width: : 10%;
-    padding: 0 40px;
-}
-
-.bottom-bar .search input[type=text] {
-    width: 100%;
-    height: 40px;
-    padding: 0 15px;
-    color: #666666;
-    border: 1px solid #383b8a;
-    border-radius: 4px;
-}
-
-.bottom-bar .search button {
-    position: absolute;
-    width: 40px;
-    height: 38px;
-    top: 1px;
-    right: 56px;
-    padding: 0 13px;
-    border: none;
-    background: none;
-    color: black;
-    border-radius: 0 2px 2px 0;
-}
-
-.bottom-bar .search button:hover {
-    background: #383b8a;
-    color: #ffffff;
-}
-
-.bottom-bar .user {
-    font-size: 0;
-    text-align: right;
-}
-
-.bottom-bar .user .wishlist {
-    margin-right: 15px;
-}
-
-.bottom-bar .user .cart i,
-.bottom-bar .user .wishlist i {
-    color: #ff3137;
-}
-
-.bottom-bar .user .cart span,
-.bottom-bar .user .wishlist span {
-    color: #383b8a;
-    font-size: 15px;
-}
-
-.bottom-bar .user .cart:hover i,
-.bottom-bar .user .wishlist:hover i,
-.bottom-bar .user .cart:hover span,
-.bottom-bar .user .wishlist:hover span {
-    color: #ffffff;
-}
-
-.btn {
-    color: #FF6F61;
-    background: #ffffff;
-    border: 1px solid #383b8a;
-}
-
-.btn:hover,
-.btn:active,
-.btn:focus {
-    color: #ffffff;
-    background: #383b8a;
-    box-shadow: none;
-}
-
-/***************************/
-/**********NAVBAR***********/
-/***************************/
-.navbar{
-    padding-top: 0;
-    margin: 0 15px;
-}
-.navbar .container-fluid{
-    display: block;
-}
-.navbar .row > div{
-    text-align: center;
-}
-.navbar ul{
-    height: 20px;
-}
-.navbar li{
-    display: inline-block;
-    font-size: 14px;
-    margin: 10px 15px;
-    letter-spacing: 1.87px;
-    font-stretch: 100%;
-}
-
-/**************************/
-/**********SLIDE***********/
-/**************************/
-.carousel .carousel-item > div{
-    height: 500px;
 }
 
 
