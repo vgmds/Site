@@ -116,12 +116,12 @@ hr{
 }
 .infos i{
     font-size: 4rem;
-    color: #e01f1f;
+    color: #ff3137;
 
 }
 .infos h1{
     font-size: 18px;
-    color: #e01f1f; 
+    color: #ff3137; 
     font-weight: 600;
 }
 .infos .row > div{
@@ -141,7 +141,7 @@ hr{
 }
 .carousel .bi{
     font-size: 25px;
-    color: #e01f1f;
+    color: #ff3137;
 }
 
 
@@ -190,7 +190,7 @@ hr{
 }
 .section-header h1{
     background-color: transparent;
-    color: #e01f1f;
+    color: #ff3137;
     text-align: center;
     font-size: 2.5rem;
     font-family: Montserrat-bold;
@@ -293,7 +293,7 @@ hr{
     font-size: 20px; 
     display: block;
     font-family: Montserrat-semibold;
-    color: #e01f1f;
+    color: #ff3137;
     margin: 5px 0;
     margin-block-end: 10px;
 
@@ -310,7 +310,7 @@ hr{
     left: 0;
     right: 0;
     bottom: -5px;
-    background-color: #e01f1f;
+    background-color: #ff3137;
     padding: 10px 15px 15px 15px;
     opacity: 0;
     transition: all 0.3s ease-in-out;
@@ -574,7 +574,7 @@ header .header-center{
     color: black;
 }
 .header-center li:hover{
-    color:  #e01f1f;    
+    color:  #ff3137;    
     transition: all 0.5s;
 }
 .header-center ul{
@@ -621,13 +621,12 @@ header .header-center{
 .carousel .carousel-item > div{
     height: 500px;
 }
-
-.section-header:hover .hr-feature{
+.feat:hover .hr-feature{
     width: 25px;
     transition: all 0.5s;
 }
 
-.visita .title-map:hover .hr-visit{
+.visita:hover .hr-visit{
     width: 55px;
     transition: all 0.5s;
 }
