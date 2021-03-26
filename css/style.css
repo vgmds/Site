@@ -194,6 +194,10 @@ hr{
     font-size: 2.5rem;
     font-family: Montserrat-bold;
 }
+.section-header h4{
+    color: #ff3137;
+    font-family: Montserrat-bold;
+}
 .hr-feature{
     width: 5%;
     height: 2px;
@@ -301,9 +305,7 @@ hr{
 .product-item .product-title h3 span {
     font-size: 13px;
 }
-.product-item .product-price a{
 
-}
 .product-item .product-price .btn {
     position: absolute;
     left: 0;
@@ -463,7 +465,6 @@ hr{
 .footer-m .social-m i{
     font-size: 19px;
 }
-}
 
 
 /*********************************************************************************************************/
@@ -539,7 +540,6 @@ header{
     display: block;
     max-width: 100%;
     height: auto;
-    vertical-align: middle;
     border-style: none;
 }
 header .header-center{
@@ -583,9 +583,6 @@ header .header-center{
 }
 .header-right .search input{
     margin: 0 10px;
-}
-.header-right .search input:hover{
-
 }
 
 .header-right .search button{
@@ -700,4 +697,5 @@ header .header-center{
 @media (min-width: 1200px) { 
     h1{
     color:black;
+    }
 }
