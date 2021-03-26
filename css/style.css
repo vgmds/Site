@@ -25,7 +25,7 @@
 body{
     font-family: "Montserrat", sans-serif;
     font-weight: 300;
-    background-color: #f7f7f7;
+    background-color: #fff;
 }
 h1{
     color:red;
@@ -116,21 +116,23 @@ hr{
 }
 .infos i{
     font-size: 4rem;
-    color: #d43336;
+    color: #e01f1f;
+
 }
 .infos h1{
     font-size: 18px;
-    color: #d43336; 
+    color: #e01f1f; 
     font-weight: 600;
 }
 .infos .row > div{
    padding: 10px 15px;
 }
 .infos .inf{
+    border: 1px #272727 solid;
     width: 100%;
     padding: 15px 0;
     border-radius: 5px;
-    border: 1px #d43336 solid;
+    border: ,;
     background-color: white;
 }
 
@@ -139,7 +141,7 @@ hr{
 }
 .carousel .bi{
     font-size: 25px;
-    color: #383b8a;
+    color: #e01f1f;
 }
 
 
@@ -182,12 +184,13 @@ hr{
 /************ FEATURE *************/
 /**********************************/
 .section-header{
-    padding: 40px 45px;
-    margin: 40px 0px;
+    padding: 20px 45px;
+    margin-top: 60px;
+    margin-bottom: 20px;
 }
 .section-header h1{
     background-color: transparent;
-    color: #d43336;
+    color: #e01f1f;
     text-align: center;
     font-size: 2.5rem;
     font-family: Montserrat-bold;
@@ -201,9 +204,9 @@ hr{
     margin-top: 0px;
     margin-bottom: 0px;
     border-width: 1px;
-    border-color: #d43336; 
-
+    border-color: #272727; 
 }
+
 
 /**********************************/
 /******** Product Item CSS ********/
@@ -212,45 +215,33 @@ hr{
     position: relative;
     display: inline-block;
 }
-
 .product-item{
-    border: 1px #ccc solid;
+    border: 1px #dddddd solid;
     border-radius: 5px;
     z-index: 999;
 }
-
 .product-item .product-title {
-    text-align: left;
+    text-align: center;
     background: #fff;
-    transition: all .3s;
+    transition: all .4s;
+     padding: 10px;
 }
-
 .product-item:hover .product-title {
+
     background: #fff;
 }
-
-.product-item .product-title a,
-.product-item .product-title .ratting {
+.product-item .product-title a {
     position: relative;
     width: 100%;
 
 }
-
 .product-item .product-title a {
     color: #222;
-    font-size: 15px;
+    font-size: 16px;
     font-family: Montserrat-semibold;
     font-weight: 900px;
 
 }
-
-.product-item .product-title h3{
-    margin-left: 12px;
-    text-decoration: none;
-    font-weight: 700;
-    color: #d43336;
-}
-
 .product-item .bi{
     position: relative;
     top: 10px;
@@ -272,8 +263,8 @@ hr{
 
 .product-item .product-image a {
     display: block;
-    background: #f7f7f7;
-    border-radius: 19px 19px 0px 0px;
+    background: #fbfbfb;
+    border-radius: 4px 4px 0px 0px;
     transition: .3s;
 }
 
@@ -283,41 +274,55 @@ hr{
 }
 
 .product-item:hover .product-image a{
-    background-color: #ccc;
+    background-color: #c6c6c6;
 }
 .product-item:hover .product-image img{
-    opacity: 0.5; 
+    opacity: 0.6; 
 }
 
 .product-item .product-price {
-    padding: 20px;
+    padding: 10px 0;
+    text-align: center;
     background: #fff;
-    border-radius: 19px;
+    border-radius: 0 0 4px 4px;
     transition: all .3s;
 }
 
 
 .product-item .product-title h3 {
-    font-size:15px; 
+    font-size: 20px; 
     display: block;
     font-family: Montserrat-semibold;
-    color: #d43336;
-    margin: 0;
+    color: #e01f1f;
+    margin: 5px 0;
+    margin-block-end: 10px;
 
 }
 
 .product-item .product-title h3 span {
     font-size: 13px;
 }
+.product-item .product-price a{
 
+}
 .product-item .product-price .btn {
     position: absolute;
-    bottom: 10px;
-    right: 10px;
-    border: none;
-    color: #000000;
-    background: #FF6F61;
-
+    left: 0;
+    right: 0;
+    bottom: -5px;
+    background-color: #e01f1f;
+    padding: 10px 15px 15px 15px;
+    opacity: 0;
+    transition: all 0.3s ease-in-out;
+    visibility: hidden;
+    margin: 0 35px;
+    border-radius: 40px;
+}
+.product-item:hover .product-price .btn{
+    color: #fff;    
+    bottom: 11px;
+    opacity: 1;
+    visibility: visible;
 }
 
 
@@ -326,37 +331,80 @@ hr{
 
 }
 
-.paginations .pagination{
-    margin: 20px 0; 
-
+.paginations{
+    margin-top: 10px;
+    margin-bottom: 60px; 
+}
+.paginations .page-item a{
+    color: red;
+    background-color: transparent;
+    border: none;
+    padding: 15px 10px;
+}
+.paginations a:hover{
+    font-family: Montserrat-bold;
+}
+.hr-pag{
+    width: 20px;
+    height: 3px;
+    background-color: transparent;
+    margin-right: auto;
+    margin-left: auto;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    border-width: 1px;
+    border-color: #272727;   
+}
+.paginations .page-item a:hover .hr-pag{
+    background-color: #272727;
+    transition: all 0.3s
 }
 
 .visita .title-map{
-    padding: 15px 0;
-    background-color: #282828;
+    background-color: #fff;
     color: #fff;
     text-align: center;
     font-family: Montserrat-semibold;
     margin-bottom: 15px; 
 }
+.hr-visit{
+    width: 100px;
+    height: 3px;
+    background-color: transparent;
+    margin-right: auto;
+    margin-left: auto;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    border-width: 1px;
+    border-color: #272727; 
+}
 
 .visita h1{
     color: #ff3137;    
 }
+.visita h2{
+    margin-top: 10px;
+    color: #272727;
+    font-size: 25px;
+}
 .btn-visita {
-    color: #ff3137;
-    background: #ffffff;
-    padding: 8px 15px;
+    color: #272727;
+    background: #fff;
+    padding: 5px 15px;
     border-radius: 4px;
 }
 
 .btn-visita:hover,
 .btn-visita:active,
 .btn-visita:focus {
-    color: #ffffff;
-    background: #383b8a;
+    text-decoration: underline;
+    background: #fff;
     box-shadow: none;
 }
+.visita .places span{
+    background: white;
+}
+
 .visite .map{
     margin-bottom: 30px;
 }
@@ -476,7 +524,7 @@ hr{
 /***************************/
 .fixed{
     position: fixed;
-    top: 1px;
+    top: 0px;
     z-index: 99999;
     background-color: #fff;
 }
@@ -495,7 +543,7 @@ header{
     height: 100%;
 }
 .active{
-    color:  #d43336;
+    color:#d43336;
 }
 .logo{
     display: block;
@@ -523,10 +571,10 @@ header .header-center{
     padding: 0 10px;
     text-transform: capitalize;
     font-family: Montserrat-semibold;
-    color: #555;
+    color: black;
 }
 .header-center li:hover{
-    color:  #f03a3d;    
+    color:  #e01f1f;    
     transition: all 0.5s;
 }
 .header-center ul{
@@ -552,8 +600,7 @@ header .header-center{
     margin: 0 10px;
 }
 .header-right .search input:hover{
-    background-color: red;
-    transition: all 0.4s;
+
 }
 
 .header-right .search button{
@@ -573,6 +620,16 @@ header .header-center{
 }
 .carousel .carousel-item > div{
     height: 500px;
+}
+
+.section-header:hover .hr-feature{
+    width: 25px;
+    transition: all 0.5s;
+}
+
+.visita .title-map:hover .hr-visit{
+    width: 55px;
+    transition: all 0.5s;
 }
 .footer{
     padding: 10px 0;
