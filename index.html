@@ -16,7 +16,7 @@
 
         <link href="https://fonts.googleapis.com/css?family=Montserrat:100,200,300" rel="stylesheet">
 
-        <title>Olá, mundo!</title>
+        <title>Solar Calçados - Home</title>
     </head>
 
 
@@ -39,7 +39,7 @@
     <!------------------------->
     <!--INICIO HEADER MOBILE -->
     <!------------------------->
-    <div class="header d-lg-none d-xl-none">
+    <div class="header shadow d-lg-none d-xl-none">
         <div class="container-fluid">
             <div class="row">
                 <div class="menu col">
@@ -75,7 +75,7 @@
     <!------------------------->
     <!--- FIM HEADER MOBILE --->
     <!------------------------->
-      <header class="container-fluid fixed d-none d-lg-flex d-xl-flex">
+      <header class="shadow container-fluid fixed d-none d-lg-flex d-xl-flex">
         <div class="header-left">
           <a class="logo" href="#">
             <img src="img/logo-house.png">
@@ -84,11 +84,11 @@
         <div class="header-center"> 
           <div class="nav">
             <ul>
-              <li class="active">homem</li>
-              <li class="active">mulher</li>
-              <li class="active">kids</li>
-              <li class="active">esporte</li>
-              <li class="active">acessórios</li>
+              <li class="active cursor-pointer">homem</li>
+              <li class="active cursor-pointer">mulher</li>
+              <li class="active cursor-pointer">kids</li>
+              <li class="active cursor-pointer">esporte</li>
+              <li class="active cursor-pointer">acessórios</li>
             </ul>
           </div>
         </div>
@@ -107,7 +107,7 @@
     <!------------------------>
 
     <!-- INICIO SLIDE -->
-    <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
+    <div id="carouselExampleControls" class="carousel slide shadow" data-ride="carousel">
         <div class="carousel-inner">
             <div class="carousel-item active">
                 <div style="background: gray;"></div>
@@ -129,49 +129,25 @@
         </a>
     </div>
     <!-- FIM SLIDE -->
-
-    <!-- INICIO INFO -->
-    <div class="container-infos container">
-      <div class="infos">
-        <div class="row">
-          <div class="col-6 col-md-3">
-              <div class="inf"> 
-                  <i class="bi bi-credit-card-2-back"></i>
-                  <h1>PARCELE EM ATÉ 12X</h1>
-              </div>
-          </div>
-          <div class="col-6 col-md-3">
-            <div class="inf">
-                <i class="bi bi-truck"></i>
-                <h1>FAZEMOS ENTREGAS</h1>
-            </div>
-          </div>
-          <div class="col-6 col-md-3">
-            <div class="inf">
-                <i class="bi bi-arrow-repeat"></i>
-                <h1>7 DIAS PARA TROCAS</h1>
-            </div>    
-          </div>
-          <div class="col-6 col-md-3">
-            <div class="inf">
-                <i class="bi bi-chat-dots"></i>
-                <h1>SUPORTE 24/6</h1>
-            </div>
-          </div>
-        </div>
-      </div>
+    <div class="container ">
+        
     </div>
 
     <!-- INICIO PRODUTOS EM DESTAQUE -->
     <div class="container feat"> 
         <div class="section-header">
-            <h1>Destaque</h1>
+            <h1>Destaques</h1>
                     <hr class="hr-feature" />
         </div>
-
+        <div class="row d-none d-lg-block">
+            <form class="form-inline row justify-content-center mb-4 px-5">
+                <input class="form-control col-10 shadow" type="search" placeholder="Chinelo, Rasteirinha, Tenis, Salto" aria-label="Buscar">
+                <button class="btn btn-outline-danger col shadow" type="submit">Buscar</button>
+            </form>
+        </div>
         <div class="row ">
-            <div class="col-6 col-md-4 col-lg-3">
-                <div class="product-item">
+            <div class="mt-4 col-6 col-md-4 col-lg-3">
+                <div class="product-item card shadow rounded">
                     <div class="product-image">
                         <i class="bi bi-suit-heart"></i> 
                         <a href="product-detail.html">
@@ -183,13 +159,13 @@
                         <h3>R$59,99</h3>
                     </div>
                     <div class="product-price">
-                        <a class="btn" href="">Comprar</a>
+                        <a class="btn py-0  shadow" href="">Comprar</a>
                     </div>
                 </div>
             </div>
 
-            <div class="col-6 col-md-4 col-lg-3">
-                <div class="product-item">
+            <div class="mt-4 col-6 col-md-4 col-lg-3">
+                <div class="product-item card shadow rounded">
                     <div class="product-image">
                         <i class="bi bi-suit-heart"></i>
                         <a href="product-detail.html">
@@ -201,13 +177,13 @@
                         <h3>R$59,99</h3>
                     </div>
                     <div class="product-price">
-                        <a class="btn" href="">Comprar</a>
+                        <a class="btn  py-0 shadow" href="">Comprar</a>
                     </div>
                   </div>
             </div>
 
-            <div class="col-6 col-md-4 col-lg-3">
-                <div class="product-item">
+            <div class="mt-4 col-6 col-md-4 col-lg-3">
+                <div class="product-item card shadow rounded">
                     <div class="product-image">
                         <i class="bi bi-suit-heart"></i> 
                         <a href="product-detail.html">
@@ -219,12 +195,12 @@
                         <h3>R$59,99</h3>
                     </div>
                     <div class="product-price">
-                        <a class="btn" href="">Comprar</a>
+                        <a class="btn py-0 shadow" href="">Comprar</a>
                     </div>
                 </div>
             </div>
-            <div class="col-6 col-md-4 col-lg-3">
-                <div class="product-item">
+            <div class="mt-4 col-6 col-md-4 col-lg-3">
+                <div class="product-item card shadow rounded">
                     <div class="product-image">
                         <i class="bi bi-suit-heart"></i> 
                         <a href="product-detail.html">
@@ -236,7 +212,7 @@
                         <h3>R$59,99</h3>
                     </div>
                     <div class="product-price">
-                        <a class="btn btn-fill-out" href="">Comprar</a>
+                        <a class="btn py-0 btn-fill-out shadow" href="">Comprar</a>
                     </div>
                 </div>
             </div>
@@ -244,6 +220,7 @@
     </div>
     
     <!-- FIM PRODUTOS EM DESTAQUE -->
+
     <div class="paginations">
         <div class="col-md-12">
              <nav aria-label="Page navigation example">
@@ -256,6 +233,38 @@
         </div>
     </div>
 
+    <!-- INICIO INFO -->
+    <div class="container-infos container mb-5">
+        <div class="infos">
+          <div class="row">
+            <div class="col-6 col-md-3">
+                <div class="card shadow rounded  inf"> 
+                    <i class="bi bi-credit-card-2-back"></i>
+                    <h1 style="min-height: 41px;">PARCELE EM ATÉ 12X</h1>
+                </div>
+            </div>
+            <div class="col-6 col-md-3">
+              <div class="card shadow rounded inf">
+                  <i class="bi bi-truck"></i>
+                  <h1 style="min-height: 41px;">FAZEMOS ENTREGAS</h1>
+              </div>
+            </div>
+            <div class="col-6 col-md-3">
+              <div class="card shadow rounded  inf">
+                  <i class="bi bi-arrow-repeat"></i>
+                  <h1 style="min-height: 41px;">7 DIAS PARA TROCAS</h1>
+              </div>    
+            </div>
+            <div class="col-6 col-md-3">
+              <div class="card shadow rounded inf">
+                  <i class="bi bi-chat-dots"></i>
+                  <h1 style="min-height: 41px;">SUPORTE 24/6</h1>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
     <!-- MAPA -->
     <div class="visita container-fluid">
         <div class="title-map">
@@ -263,8 +272,8 @@
             <hr class="hr-visit"/>
             <h2>Estamos em:</h2>
             <div class="places">
-                <span class="btn-visita">Viana</span>
-                <span class="btn-visita">Penalva</span>
+                <button class="btn btn-danger">Viana</button>
+                <button class="btn btn-danger">Penalva</button>
             </div>
         </div>        
         <div class="map" style='overflow:hidden;height:280px;width:100%;color: #0095eb'>
@@ -361,10 +370,10 @@
                   <h2>Amito</h2> 
               </div>
             </div>
-            <div class="row copy">
-              <div class="col-12">
+          </div>
+          <div class="row mt-5 container-fluid">
+            <div class="col text-center">
                 <h1>Copyright © Amito ltds. All Rights Reserved</h1>
-              </div>
             </div>
           </div>
         </div>
