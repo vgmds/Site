@@ -19,6 +19,7 @@ import { CategoryFilterListComponent } from './component/category-filter-list/ca
 import { ProductsPageComponent } from './page/products-page/products-page.component';
 import { BuyProductPageComponent } from './page/buy-product-page/buy-product-page.component';
 import { ProductDetailComponent } from './component/product-detail/product-detail.component';
+import { NotFoundPageComponent } from './page/not-found-page/not-found-page.component';
 
 @NgModule({
   declarations: [
@@ -38,7 +39,8 @@ import { ProductDetailComponent } from './component/product-detail/product-detai
     CategoryFilterListComponent,
     ProductsPageComponent,
     BuyProductPageComponent,
-    ProductDetailComponent
+    ProductDetailComponent,
+    NotFoundPageComponent
   ],
   imports: [
     BrowserModule,
