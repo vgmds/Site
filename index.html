@@ -15,6 +15,7 @@
         <link rel="shortcut icon" href="img/favicon.png" />
 
         <link href="https://fonts.googleapis.com/css?family=Montserrat:100,200,300" rel="stylesheet">
+        <script type="text/javascript"src="js/google.js"></script>
 
         <title>Solar Calçados - Home</title>
     </head>
@@ -36,22 +37,18 @@
          }
         </style>
 
-    <!------------------------->
-    <!--INICIO HEADER MOBILE -->
-    <!------------------------->
-    <div class="header shadow d-lg-none d-xl-none">
+    <header class="header shadow d-lg-none d-xl-none">
         <div class="container-fluid">
             <div class="row">
                 <div class="menu col-3 col-sm-2">
                     <div class="dropdown">
                         <button class="dropbtn"><i class="bi bi-list"></i></button>
                         <div class="dropdown-content">
-                            <a href="#" style="font-family: Montserrat-semibolditalic;"><b>CONTA</b></a>
-                            <a href="Products.html" style="font-family: Montserrat-semibolditalic;">HOMEM</a>
-                            <a href="#" style="font-family: Montserrat-semibolditalic;">MULHER</a>
-                            <a href="#" style="font-family: Montserrat-semibolditalic;">KIDS</a>
-                            <a href="#" style="font-family: Montserrat-italic;">ESPORTE</a>
-                            <a href="#" style="font-family: Montserrat-italic;">ACESSÓRIOS</a>
+                            <a href="Products.html" style="font-family: Montserrat-semibolditalic;">Homem</a>
+                            <a href="Products.html" style="font-family: Montserrat-semibolditalic;">Mulher</a>
+                            <a href="Products.html" style="font-family: Montserrat-semibolditalic;">Kids</a>
+                            <a href="Products.html" style="font-family: Montserrat-italic;">Esporte</a>
+                            <a href="Products.html" style="font-family: Montserrat-italic;">Acessórios</a>
                         </div>
                     </div>   
                 </div>
@@ -59,7 +56,7 @@
                     <a href="index.html"><img class="img-fluid" src="img/logo.png"></a>
                 </div>
                 <div class="bag col-2 ">
-                    <i class="bi bi-bag"></i>
+                    <a href="cart.html"><i class="bi bi-bag"></i></a>
                 </div>
             </div>
             <div class="row">
@@ -71,42 +68,35 @@
                 </div>
             </div>
         </div>
-    </div>
-    <!------------------------->
-    <!--- FIM HEADER MOBILE --->
-    <!------------------------->
-      <header class="shadow container-fluid fixed d-none d-lg-flex d-xl-flex">
+    </header>
+     
+    <header class="shadow container-fluid fixed d-none d-lg-flex d-xl-flex">
         <div class="header-left">
-          <a class="logo" href="index.html">
+            <a class="logo" href="index.html">
             <img src="img/logo-house.png">
-          </a>
+            </a>
         </div>
         <div class="header-center"> 
-          <div class="nav">
-            <ul>
-              <li class="active cursor-pointer"><a href="Products.html">homem</a></li>
-              <li class="active cursor-pointer">mulher</li>
-              <li class="active cursor-pointer">kids</li>
-              <li class="active cursor-pointer">esporte</li>
-              <li class="active cursor-pointer">acessórios</li>
-            </ul>
-          </div>
+            <div class="nav">
+                <ul>
+                    <li class="active cursor-pointer"><a href="Products.html">homem</a></li>
+                    <li class="active cursor-pointer"><a href="Products.html">mulher</a></li>
+                    <li class="active cursor-pointer"><a href="Products.html">kids</a></li>
+                    <li class="active cursor-pointer"><a href="Products.html">esporte</a></li>
+                    <li class="active cursor-pointer"><a href="Products.html">acessórios</a></li>
+                </ul>
+            </div>
         </div>
         <div class="header-right">
-          <div class="search">
-              <input type="text" placeholder="Procurar...">
-              <button><i class="bi bi-search"></i></button>
-          </div>
-          <div class="cart">
-              <i class="bi bi-bag"></i>
-          </div>
+            <div class="search">
+                <input type="text" placeholder="Procurar...">
+                <button><i class="bi bi-search"></i></button>
+            </div>
+        <div class="cart">
+            <a href="cart.html"><i class="bi bi-bag"></i></a>
         </div>
-      </header>  
-    <!------------------------>
-    <!------ FIM NAVBAR ------>
-    <!------------------------>
+    </header>
 
-    <!-- INICIO SLIDE -->
     <div id="carouselExampleControls" class="carousel slide shadow" data-ride="carousel">
         <div class="carousel-inner">
             <div class="carousel-item active">
@@ -128,12 +118,7 @@
             <span class="sr-only">Próximo</span>
         </a>
     </div>
-    <!-- FIM SLIDE -->
-    <div class="container ">
-        
-    </div>
 
-    <!-- INICIO PRODUTOS EM DESTAQUE -->
     <div class="container feat"> 
         <div class="section-header">
             <h1 class="d-none d-sm-block">Destaques</h1>
@@ -147,6 +132,7 @@
             </form>
         </div>
         <div class="row">
+
             <div class="mt-4 col-12 col-sm-6 col-md-4 col-lg-3">
                 <div class="product-item w-100 card shadow rounded">
                     <div class="product-image">
@@ -220,8 +206,6 @@
         </div>    
     </div>
     
-    <!-- FIM PRODUTOS EM DESTAQUE -->
-
     <div class="paginations">
         <div class="col-md-12">
              <nav aria-label="Page navigation example">
@@ -234,7 +218,6 @@
         </div>
     </div>
 
-    <!-- INICIO INFO -->
     <div class="container-infos container mb-5">
         <div class="infos">
           <div class="row">
@@ -266,7 +249,6 @@
         </div>
       </div>
 
-    <!-- MAPA -->
     <div class="visita container-fluid">
         <div class="title-map">
             <h1>Venha nos visitar!</h1>
@@ -283,13 +265,11 @@
         </div>
     </div>  
 
-
     <div class="espace ">
         <div class="footer-line"></div>
     </div>
 
-
-    <div class="footer-m d-lg-none d-xl-none">
+    <footer class="footer-m d-lg-none d-xl-none">
         <div class="contact-m">
             <h1>Entre em contato</h1>
             <i class="bi bi-three-dots"></i>
@@ -322,72 +302,59 @@
             <h1>Aceitamos:</h1>
             <img src="img/cards.png">
         </div>
-    </div>
-  
-
-<!-- MAPA -->
+    </footer>
         
-        <!-- INICIO FOOTER -->
-        <div class="footer container-fluid d-none d-lg-block">
-            <div class="container">
-                <div class="row">
-                    <div class="col-4 contact">
-                        <h1>Entre em contato</h1>
-                            <ul>
-                                <li><i class="bi bi-geo-alt"></i><h2>Rua 7 de setembro, 285. Centro. Viana</h2></li>
-                                <li><i class="bi bi-geo-alt"></i><h2>Rua Getúlio Vargas, 465. Centro. Penalva</h2></li>
-                                <li><i class="bi bi-envelope"></i><h2>solarcalcadosga@gmail.com</h2></li>
-                                <li><i class="bi bi-telephone"></i><h2>+55 98 8434-5201</h2></li>
-                            </ul>
-                    </div>
-                    <div class="col-4 social">
-                        <h1>Nossas socias</h1>
-                            <ul>
-                                <li><a href="https://www.facebook.com/solar.calcadoss"><i class="bi bi-facebook"></i></a></li>
-                                <li><a href="https://www.instagram.com/solar.calcados/"><i class="bi bi-instagram"></i></a></li>
-                                <li><a href="https://api.whatsapp.com/send?phone=55559884345200&text=Ol%C3%A1.%20Vim%20pelo%20site">
-                                  <i class="bi bi-whatsapp"></i></a></li>
-                            </ul>
-                    </div>
-                    <div class="col-4 about">
-                        <h1>Informações</h1>
-                            <ul>
-                                <li><a href="about.html"><i class="bi bi-chevron-right"></i>Sobre nós</a></li>
-                                <li><a href="#"><i class="bi bi-chevron-right"></i>Pagamento</a></li>
-                                <li><a href="#"><i class="bi bi-chevron-right"></i>Envio</a></li>
-                                <li><a href="#"><i class="bi bi-chevron-right"></i>Devolução</a></li>
-                            </ul>
-                    </div>
-                </div>
+    <footer class="footer container-fluid d-none d-lg-block">
+        <div class="container">
             <div class="row">
-              <div class="col-4 cards">
-                  <h1>Aceitamos:</h1>
-                  <img src="img/cards.png"></img>
-              </div>
-              <div class="col-4 ">
-              </div>
-              <div class="col-4 dev">
-                  <h1>desenvolvido por:</h1>
-                  <h2>Amito</h2> 
-              </div>
+                <div class="col-4 contact">
+                    <h1>Entre em contato</h1>
+                        <ul>
+                            <li><i class="bi bi-geo-alt"></i><h2>Rua 7 de setembro, 285. Centro. Viana</h2></li>
+                            <li><i class="bi bi-geo-alt"></i><h2>Rua Getúlio Vargas, 465. Centro. Penalva</h2></li>
+                            <li><i class="bi bi-envelope"></i><h2>solarcalcadosga@gmail.com</h2></li>
+                            <li><i class="bi bi-telephone"></i><h2>+55 98 8434-5201</h2></li>
+                        </ul>
+                </div>
+                <div class="col-4 social">
+                    <h1>Nossas socias</h1>
+                        <ul>
+                            <li><a href="https://www.facebook.com/solar.calcadoss"><i class="bi bi-facebook"></i></a></li>
+                            <li><a href="https://www.instagram.com/solar.calcados/"><i class="bi bi-instagram"></i></a></li>
+                            <li><a href="https://api.whatsapp.com/send?phone=55559884345200&text=Ol%C3%A1.%20Vim%20pelo%20site">
+                              <i class="bi bi-whatsapp"></i></a></li>
+                        </ul>
+                </div>
+                <div class="col-4 about">
+                    <h1>Informações</h1>
+                        <ul>
+                            <li><a href="about.html"><i class="bi bi-chevron-right"></i>Sobre nós</a></li>
+                            <li><a href="#"><i class="bi bi-chevron-right"></i>Pagamento</a></li>
+                            <li><a href="#"><i class="bi bi-chevron-right"></i>Envio</a></li>
+                            <li><a href="#"><i class="bi bi-chevron-right"></i>Devolução</a></li>
+                        </ul>
+                </div>
             </div>
-          </div>
-          <div class="row mt-5 container-fluid">
+            <div class="row">
+                <div class="col-4 cards">
+                    <h1>Aceitamos:</h1>
+                    <img src="img/cards.png">
+                </div>
+                <div class="col-4 ">
+                </div>
+                <div class="col-4 dev">
+                    <h1>desenvolvido por:</h1>
+                    <h2>Amito</h2> 
+                </div>
+            </div>
+        </div>
+        <div class="row mt-5 container-fluid">
             <div class="col text-center">
                 <h1>Copyright © Amito ltds. All Rights Reserved</h1>
             </div>
-          </div>
         </div>
-
-        <!-- FIM FOOTER -->
-
-        <!-- JavaScript Libraries -->
+    </footer>
         
-
-
-
-
-
     <!-- JavaScript (Opcional) -->
     <!-- jQuery primeiro, depois Popper.js, depois Bootstrap JS -->
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
@@ -396,13 +363,8 @@
 
 
     <script src='https://maps.google.com/maps/api/js?key=AIzaSyDv7YRz1WWPhkr6aim8wEm4WDPBdk81z54'></script>
-    <script type='text/javascript'>
-        function init_map(){var myOptions = {zoom:15,center:new google.maps.LatLng(-3.2141649,-45.0036786),mapTypeId: google.maps.MapTypeId.ROADMAP};
-        map = new google.maps.Map(document.getElementById('gmap_canvas'), myOptions);marker = new google.maps.Marker({map: map,position:
-        new google.maps.LatLng(-3.2141649,-45.0036786)});infowindow = new google.maps.InfoWindow({content:
-        '<img src="img/faviconn.png" style="width:100% "/><h1 style="color:black; font-size:20px">Viana</h1>'});google.maps.event.addListener(marker, 'click', function(){infowindow.open(map,marker);
-        });infowindow.open(map,marker);}google.maps.event.addDomListener(window, 'load', init_map);
-    </script>
+    <script type="text/javascript"src="js/google.js"></script>
+        
 
 
     </body>
