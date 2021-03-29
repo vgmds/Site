@@ -17,6 +17,19 @@
         toggleNavbarMethod();
         $(window).resize(toggleNavbarMethod);
     });
+    $(document).ready(()=>{
+  var oReq = new XMLHttpRequest();
+  oReq.onload = () => {
+    document.getElementById("loremipsumhere").innerHTML = oReq.responseText;
+  };
+  oReq.open(
+    "get",
+    "https://baconipsum.com/api/?type=all-meat&paras=2&start-with-lorem=1",
+    true
+  );
+  oReq.send();
+
+})
     
     
     // Back to top button
